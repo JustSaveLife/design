@@ -1,7 +1,5 @@
 import React from 'react';
 
-const PathologiesDataComponent = () => (
-  <div />
-);
+const PathologiesDataComponent = () => <div />;
 
 export default PathologiesDataComponent;

@@ -3,6 +3,7 @@ import FormStepper from '../form-stepper/form-stepper';
 import PersonalDataComponent from '../personal-data-component/personal-data-component';
 import SymptomsDataComponent from '../symptoms-data-component/symptoms-data-component';
 import PathologiesDataComponent from '../pathologies-data-component/pathologies-data-component';
+import { getTimeAndDate } from '../../helpers/timeHelper';
 
 const TelephoneMessageForm = () => {
   const submitHandler = async (values: any) => {
@@ -13,7 +14,7 @@ const TelephoneMessageForm = () => {
   return (
     <FormStepper
       initialValues={{
-        fillingTime: new Date(),
+        fillingTime: getTimeAndDate(new Date()),
         surname: '',
         name: '',
         patronymic: '',

@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import { Formik, Form, FormikConfig, FormikValues, FormikHelpers } from 'formik';
+import {
+  Formik,
+  Form,
+  FormikConfig,
+  FormikValues,
+  FormikHelpers
+} from 'formik';
 import {
   StepLabel,
   Stepper,
@@ -19,6 +25,7 @@ const FormStepper = ({ children, ...props }: FormikConfig<FormikValues>) => {
   const isLastStep = () => step === childrenArray.length - 1;
   const isFirstStep = () => step === 0;
   const currentChild = childrenArray[step];
+  console.log(currentChild);
   const onSubmit = async (
     values: FormikValues,
     helpers: FormikHelpers<FormikValues>
@@ -35,7 +42,7 @@ const FormStepper = ({ children, ...props }: FormikConfig<FormikValues>) => {
   return (
     <Formik
       {...props}
-      validationSchema={currentChild.props.validationSchema}
+      //validationSchema={currentChild.props.validationSchema}
       onSubmit={onSubmit}
     >
       {({ isSubmitting }) => (

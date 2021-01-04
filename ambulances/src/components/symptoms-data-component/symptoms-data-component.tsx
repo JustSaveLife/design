@@ -1,7 +1,5 @@
 import React from 'react';
 
-const SymptomsDataComponent = () => (
-  <div />
-);
+const SymptomsDataComponent = () => <div />;
 
 export default SymptomsDataComponent;
