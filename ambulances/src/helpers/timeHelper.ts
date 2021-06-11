@@ -7,5 +7,6 @@ export const getTimeAndDate = (date: Date): string => {
   const time = `${getDateFormat(date.getHours())}:${getDateFormat(
     date.getMinutes()
   )}`;
+  console.log(`${date.getFullYear()}-${month}-${day}T${time}`);
   return `${date.getFullYear()}-${month}-${day}T${time}`;
 };

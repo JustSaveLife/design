@@ -14,7 +14,63 @@
   },
   "rules": {
     "prettier/prettier": ["error", { "singleQuote": true }],
-    "react/prop-types": 0
+    "react/prop-types": 0,
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-object-literal-type-assertion": 0,
+    "@typescript-eslint/interface-name-prefix": 0,
+    "@typescript-eslint/prefer-interface": 0,
+    "@typescript-eslint/ban-ts-ignore": 0,
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "_",
+        "argsIgnorePattern": "_"
+      }
+    ],
+    "no-multiple-empty-lines": "error",
+    "lines-between-class-members": [
+      "error",
+      "always",
+      {
+        "exceptAfterSingleLine": true
+      }
+    ],
+    "quotes": [
+      "warn",
+      "single"
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "react/jsx-pascal-case": [
+      2
+    ],
+    "react/jsx-props-no-spreading": 0,
+    "react/display-name": 0,
+    "jsx-quotes": [
+      "error",
+      "prefer-double"
+    ],
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "max-classes-per-file": 0,
+    "react/static-property-placement": 0,
+    "no-else-return": "error",
+    "no-implicit-coercion": "error",
+    "no-magic-numbers": [
+      "warn",
+      {
+        "ignoreArrayIndexes": true,
+        "enforceConst": false,
+        "detectObjects": false,
+        "ignore": [
+          -1,
+          0
+        ]
+      }
+    ]
   },
   "settings": {
     "react": {
